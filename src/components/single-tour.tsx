@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
 
 
 export function SingleTour({ resultado }) {
@@ -34,7 +32,7 @@ export function SingleTour({ resultado }) {
              <div className="w-full sm:w-full md:w-1/2">
               {featuredImage ? (
                 <div className="rounded-xl overflow-hidden">
-                  <motion.img
+                  <img
                     src={featuredImage.source_url}
                     width={featuredImage.width}
                     height={featuredImage.height}
