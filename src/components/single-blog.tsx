@@ -57,8 +57,6 @@ export default function Singleblog({ resultado }) {
             }
             className="rounded-lg mb-5"
             alt={resultado[0].title.rendered}
-            layoutId={resultado[0]._embedded["wp:featuredmedia"][0].media_details.sizes
-            .full.source_url}
           />
           <div
             className="wp-content mb-40 first-line:uppercase first-line:tracking-widest

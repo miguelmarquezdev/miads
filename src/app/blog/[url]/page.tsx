@@ -4,7 +4,7 @@ import Singleblog from "@/components/single-blog";
 import { notFound } from "next/navigation";
 
 // Función para obtener los datos del blog
-async function getBlogData(slug) {
+async function getBlogData(slug:string) {
     const res = await fetch(
         `https://app.enjoyperu.org/wp-json/wp/v2/posts?slug=${slug}&_embed=true`,
         { cache: "no-store" }

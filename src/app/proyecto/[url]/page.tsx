@@ -5,7 +5,7 @@ import { SingleTour } from "@/components/single-tour";
 import { notFound } from "next/navigation";
 
 // Función para obtener los datos del tour desde la API
-async function getTourData(slug) {
+async function getTourData(slug:string) {
   const res = await fetch(
     `https://app.enjoyperu.org/wp-json/wp/v2/posts?slug=${slug}&_embed=true`,
     { cache: "no-store" }
